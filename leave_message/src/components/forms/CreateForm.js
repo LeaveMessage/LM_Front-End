@@ -15,8 +15,8 @@ const CreateForm = ({state}) => {
     const [post, setPost] = useState({
         content: '',
         recievers: [],
-        cycle: 3,
-        count: 2
+        cycle: '',
+        count: ''
     });
 
     useEffect(()=>{
@@ -135,7 +135,7 @@ const CreateForm = ({state}) => {
                     }
                 })
                 .then(function(response){
-                    window.location.replace('/');
+                    window.location.href = "/";
                 })
                 .catch(function(err){
                     console.log(err);
@@ -157,7 +157,7 @@ const CreateForm = ({state}) => {
                     }
                 })
                 .then(function(response){
-                    window.location.replace('/');
+                    window.location.href="/";
                 })
                 .catch(function(err){
                     console.log(err);
@@ -223,7 +223,7 @@ const CreateForm = ({state}) => {
                                 onClick={()=>{setShowInfo(true);
                                             setInfoModalState(2);}}/>
                         </div>
-                        <select defaultValue={post.cycle} 
+                        <select defaultValue={3} 
                                 className='CreateForm_SelectBox_Select'
                                 onChange={handleCycle}>
                             <option value={1}>
@@ -249,7 +249,7 @@ const CreateForm = ({state}) => {
                                 onClick={()=>{setShowInfo(true);
                                             setInfoModalState(3);}}/>
                         </div>
-                        <select defaultValue={post.count} 
+                        <select defaultValue={2} 
                                 className='CreateForm_SelectBox_Select'
                                 onChange={handleCount}>
                             <option value={1}>

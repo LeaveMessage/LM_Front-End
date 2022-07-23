@@ -9,10 +9,10 @@
 
 /* 회원가입 페이지 슬로건 박스 */
 .head{
-    width: 65%;
-    height: 9%;
+    width: 240px;
+    height: 50px;
     align-items: center;
-    margin-bottom: 3%
+    margin-bottom: 8px;
 }
 
 #bbox{
@@ -20,26 +20,25 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15%;
 }
 
 /* 회원가입 페이지 슬로건 박스 - 타이틀 */
 .titleText{
-    font-size: 4vh;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(62, 62, 62);
-    margin-left: 1%;
+    margin-left: 10px;
 }
 
 /* 회원가입 페이지 슬로건 박스 - 문구 */
 .underText{
-    font-size: 2vh;
+    font-size: 16px;
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 13px;
 }
 
 .middle{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,8 +47,8 @@
 /* 회원가입 페이지 로그인 부분 박스 */
 .bottom{
     cursor: pointer;
-    width:65%;
-    height: 15%;
+    width:100%;
+    height: 100px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +58,7 @@
 
 /* 회원가입 페이지 로그인 부분 박스 - 로그인 버튼 */
 .loginBtn{
-    margin-top: 5%;
+    margin-top: 10px;
     border: 0px solid;
     font-size: larger;
     font-weight: bolder;

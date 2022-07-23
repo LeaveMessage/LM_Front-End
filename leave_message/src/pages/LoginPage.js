@@ -13,9 +13,13 @@ function LoginPage() {
     
     return (
         <div className='Box'>
-            <img id='banner' src='/images/LM_flower_45.png' alt='사진이 없습니다'/>
-            <p id='maintitle'>남김.</p>
-            <p id='subtitle'>금잔화:이별의 슬픔</p>
+            <div className='LogoBox'>
+                <img id='banner' src='/images/LM_flower_45.png' alt='사진이 없습니다'/>
+                <p id='maintitle'>남김.</p>
+                <div className='subtitle_box'>
+                    <p id='subtitle'>금잔화:이별의 슬픔</p>
+                </div>
+            </div>
             <LoginForm />
             
             <div className="signBtn-Box">
